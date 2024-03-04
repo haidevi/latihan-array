@@ -1,0 +1,96 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+body{
+    background-color: #DDF2FD;
+}
+
+nav {
+    height: 50px;
+    width: 100%;
+    background-color: #164863;
+}
+  
+nav ul {
+    float: right;
+    margin-right: 650px;
+}
+  
+nav ul li {
+    display: inline-block;
+    line-height: 50px;
+    margin-right: 25px;
+}
+
+nav ul li a{
+    color: #DDF2FD;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav ul li a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+a svg{
+    float: right;
+    margin-top: -35px;
+    color: white;
+    margin-right: 80px;
+}
+
+#love{
+    margin-right: 130px;
+}
+
+.category{
+    padding: 30px;
+    margin-left: 150px;
+}
+
+select{
+    width: 150px;
+    height: 30px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+  }
+  
+  .search-box input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    margin-right: 150px;
+    width: 420px;
+    font-size: 16px;
+  }
+
+.main ul li{
+    display: inline-block;
+    padding: 30px;
+}
+
+.main{
+    margin-left: 100px;
+}
+
+#love_main{
+    color: red;
+}
+
+hr{
+    border: 2px solid black;
+}
+
+.harga{
+    background: #9BBEC8;
+    width: 140px;
+    border-radius: 10px;
+}

@@ -1,0 +1,168 @@
+body {
+    background-color: #DDF2FD;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #164863;
+    color: white;
+    padding: 10px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 30px; /* Sesuaikan ukuran logo sesuai kebutuhan */
+    width: 85px;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu a {
+    color: #DDF2FD;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+  }
+  
+  .menu a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+  
+  .icons img {
+    margin-left: 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    height: 20px;
+    width: 25px;
+  }
+  
+  main {
+    padding: 10px;
+  }
+
+  /* ... (kode CSS sebelumnya) */
+
+  .search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Menengahkan secara horizontal */
+    margin-top: 20px; /* Untuk memberikan ruang di atas search box (opsional) */
+  }
+  
+  .search-box input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    margin-right: 10px;
+    width: 420px;
+    font-size: 16px;
+  }
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 5px;
+    margin-left:190px;
+  }
+  
+  .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+  }
+  
+  .profile h3 {
+    margin: 0;
+  }
+  
+  h1 {
+    position :absolute;
+    color: #333;
+    text-align: center;
+    font-size: 16px;
+    margin-right: 1300px;
+    margin-top: 2px; /* Menambahkan ruang di atas judul */
+  }
+  
+  h2 {
+    position :absolute;
+    color: #333; /* Warna teks */
+    text-align: center; /* Menengahkan teks secara horizontal */
+    font-size: 16px; /* Ukuran teks */
+    margin-left: 1120px;
+    margin-bottom: 2px; /* Menambahkan ruang di bawah judul */
+  }
+
+  .centered-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 220px;
+    width: 450px;
+    margin-left: 180px;
+    margin-bottom: 50px;
+  }
+  .centered-box img {
+    max-width: 100%;
+    margin-top: 20px;
+    height: 150px;
+    width: 150px; /* Optional: memberi border radius pada gambar */
+
+   
+  }
+
+.centered-box p {
+  font-size: 16px;
+  color: #070707;
+  margin-left: 150px;
+  margin-top: 1px;
+  
+}
+.button {
+  text-align: center;
+  margin-top: -40px;
+  margin-left: 40px; /* Jarak antara centered box dan tombol */
+}
+
+.button button {
+  padding: 5px 5px;
+  background-color: #9BBEC8;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 3px;
+}
+
+.button button:hover {
+  background-color: #555;
+}
+.other button {
+  top: 40%;
+  right: 0;
+  transform: translateY(-50%);
+  padding: 5px;
+  background-color: #9BBEC8;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radevastra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <img src="logo.png" height="50" style="margin-left: 50px;">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../main/index.html">Gallery</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </nav>
+    <a href="#">
+        <svg id="love" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+            class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+            <path
+                d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
+        </svg>
+    </a>
+    <a href="#">
+        <svg id="cart" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+            class="bi bi-cart-fill" viewBox="0 0 16 16">
+            <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+        </svg>
+    </a>
+    <img src="wajah1.png" style="position: absolute; top: 80px; left: 30px;">
+    <p style="position: absolute; top: 100px; left: 100px; font-size: 20px;">Evelynart</p>
+    <div class="pesanan1">
+        <br>
+        <img src="gambar6.png" width="200" height="200">
+        <h1 style="position: absolute; left: 280px; top: 200px; font-size: 20px; font-style: normal;">Apa Yang Kamu Pikirkan</h1>
+        <div class="total">
+            <ul>
+            <li><button style="width: 30px; height: 30px; border: 3px solid #164863; background: white; font-size: 20px;" onclick="kurang()">-</button></li>
+            <li><p id="result">1</p></li>
+            <li><button style="width: 30px; height: 30px; border: 3px solid #164863; background: white; font-size: 20px;" onclick="tambah()">+</button></li>
+            </ul>
+        </div>
+        
+
+            <style>
+                
+            </style>
+        </head>
+        <body>
+        
+        <div class="container">
+            <div class="harga" id="hargaProduk">
+                <p>Rp 650.000,00</p>
+            </div>
+           
+        </div>
+        
+        <script>
+            let hargaAwal = 650000;
+            let jumlahBarang = 1;
+        
+            function tambah() {
+                jumlahBarang += 1;
+                updateHarga();
+                updateHasil();
+            }
+        
+            function kurang() {
+                if (jumlahBarang > 1) {
+                    jumlahBarang -= 1;
+                    updateHarga();
+                    updateHasil();
+                }
+            }
+        
+            function updateHarga() {
+                let tambahanHarga = hargaAwal * (jumlahBarang - 1);
+                let totalHarga = hargaAwal + tambahanHarga;
+                document.getElementById("hargaProduk").innerHTML = `Rp ${formatNumber(totalHarga)},00`;
+            }
+        
+            function updateHasil() {
+                document.getElementById('result').innerText = jumlahBarang;
+            }
+        
+            function formatNumber(number) {
+                return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+            }
+        </script>
+        
+        </body>
+        </html>
+        
+        
+    </div>
+    <button style="border: none; background: none; position: absolute; left: 850px; top: 280px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
+            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
+        </svg>
+    </button>
+    <img src="wajah2.png" style="position: absolute; top: 500px; left: 30px;">
+    <p style="position: absolute; top: 520px; left: 100px; font-size: 20px;">Jacobstyle</p>
+    <div class="pesanan1">
+        <br>
+        <img src="gambar8.png" width="200" height="200">
+        <h1 style="position: absolute; left: 280px; top: 615px; font-size: 20px;">Siang Hari di Kotaku</h1>
+        <div class="total">
+            <ul>
+            <li><button style="width: 30px; height: 30px; border: 3px solid #164863; background: white; font-size: 20px;" onclick="kurang()">-</button></li>
+            <li><p id="result">1</p></li>
+            <li><button style="width: 30px; height: 30px; border: 3px solid #164863; background: white; font-size: 20px;" onclick="tambah()">+</button></li>
+            </ul>
+        </div>
+        <div class="harga">
+            <p>Rp 5000.000,00</p>
+        </div>
+    </div>
+    <button style="border: none; background: none; position: absolute; left: 850px; top: 710px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
+            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
+        </svg>
+    </button>
+    <div class="pembayaran">
+        <h1 style="font-size: 25px;">Metode Pembayaran</h1>
+        <select style="width: 120px; background: #F0F0F0;">
+            <option>Transfer Bank</option>
+            <option>Cash</option>
+            <option>Mini Market</option>
+        </select>
+        <br>
+        <br>
+        <h1 style="font-size: 25px; padding-bottom: 5px;">item total</h1>
+        <h1 style="font-size: 25px;">diskon</h1>
+        <p style="float: right; margin-top: -50px;">Rp 5.650.000,00</p>
+        <p style="float: right; margin-top: -20px;">-Rp 50.000,00</p>
+        <center>
+        <hr style="width: 450px; border: 1px solid black;">
+        </center>
+        <br>
+        <h1 style="font-size: 25px;">total</h1>
+        <p style="float: right; margin-top: -20px;">Rp 5.500.000,00</p>
+        <center>
+        <a href="../history/history.html"><button class="checkout" style="color: white; font-size: 25px; border: none;">checkout</button></a>
+        </center>
+    </div>
+   
+</body>
+</html>
